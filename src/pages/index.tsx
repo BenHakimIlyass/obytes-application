@@ -1,15 +1,15 @@
 import * as React from "react";
 import Head from "next/head";
 import { breakpoints } from "../utils";
-import styled from "@xstyled/styled-components";
-import Image from "next/image";
-import { Hstack, Vstack, Title, Button, Container, Center, IconicButton, Footer } from "@components";
+import styled, { breakpoints as sizes, css } from "@xstyled/styled-components";
+import { Hstack, Vstack, Hero, Button, Container, Center, IconicButton, Footer } from "@components";
 import HeroImage from "../../public/hero-img.svg";
+
 const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Ilyass Ben Hakim</title>
+        <title>Ilyass Ben Hakim - Obytes job inquiry</title>
       </Head>
 
       {/* Main sections */}
@@ -18,21 +18,7 @@ const HomePage = () => {
           <Container>
             <Vstack space={16}>
               {/* hero section */}
-              <div style={{ marginLeft: 200 }}>
-                <Vstack space={2}>
-                  <Vstack space={1}>
-                    <Title>Hello</Title>
-                    <H1>Obytes</H1>
-                  </Vstack>
-                  <P style={{ maxWidth: 500, lineHeight: "30px" }}>
-                    I’m Ilyass Ben Hakim, and I’m a software engineer, self-taught frontend developer and UI UX
-                    designer.
-                  </P>
-                  <Button>
-                    My<span> portfolio</span>
-                  </Button>
-                </Vstack>
-              </div>
+              <Hero />
 
               {/* more about me*/}
               <div>
@@ -111,6 +97,13 @@ const HomePage = () => {
         </Hstack>
       </MainPlayground>
       {/* hero image */}
+      <FloatingImages />
+    </>
+  );
+};
+const FloatingImages = () => {
+  return (
+    <>
       <FloatingImagePlayground style={{ position: "absolute", top: 0, right: 0 }}>
         <HeroImage />
       </FloatingImagePlayground>
@@ -180,6 +173,14 @@ const P = styled.p`
 const FloatingImagePlayground = styled.div`
   position: absolute;
   z-index: -1;
+  ${sizes({
+    xs: css`
+      opacity: 0.2;
+    `,
+    lg: css`
+      opacity: 1;
+    `,
+  })}
 `;
 const MainPlayground = styled.div`
   z-index: 800;

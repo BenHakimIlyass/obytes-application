@@ -1,21 +1,20 @@
 import * as React from "react";
 import Head from "next/head";
 import { breakpoints } from "@utils";
-import { Vstack } from "@components";
+import { Footer, Vstack } from "@components";
 import styled from "@xstyled/styled-components";
 
-const Blog = () => {
-  const ref = React.useRef(null);
-  React.useEffect(() => {
-    ref.current.focus();
-  }, []);
+const Error = () => {
   return (
     <>
       <Head>
-        <title>Ilyass Ben Hakim - 404 sorry! You've got lost</title>
+        <title>Ilyass Ben Hakim - 404 sorry! You've lost your way</title>
       </Head>
 
-      <MainPlayground space={3}>404</MainPlayground>
+      <MainPlayground space={6}>
+        <H3>Seems like this page isn't available 404</H3>
+        <Footer />
+      </MainPlayground>
     </>
   );
 };
@@ -27,5 +26,12 @@ const MainPlayground = styled(Vstack)`
     920: `transform: translate3d(0,40vh,0);`,
   })}
 `;
-
-export default Blog;
+const H3 = styled.h3`
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  span {
+    font-weight: 500;
+  }
+`;
+export default Error;

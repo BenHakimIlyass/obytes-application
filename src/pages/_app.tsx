@@ -1,8 +1,7 @@
-import { ThemeProvider, ColorModeProvider, useColorMode } from "@xstyled/styled-components";
+import { ThemeProvider } from "@xstyled/styled-components";
 
 import { Nav } from "@components";
 import { GlobalStyle, theme } from "../globalStyles";
-import { useFavicons } from "@hooks";
 
 export default function App({ Component, pageProps }) {
   return (

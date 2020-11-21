@@ -4,3 +4,4 @@ export { default as Button } from "./button";
 export { default as IconicButton } from "./iconicButton";
 export { default as Title } from "./title";
 export * from "./layouts";
+export * from "./views";
