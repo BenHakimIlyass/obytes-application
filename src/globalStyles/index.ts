@@ -65,6 +65,9 @@ export const GlobalStyle = createGlobalStyle(css`
     word-wrap: break-word;
     hyphens: auto;
   }
+  a {
+    color: #000 !important;
+  }
   * {
     scroll-behavior: smooth;
     ::selection {

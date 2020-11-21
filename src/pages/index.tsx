@@ -76,7 +76,7 @@ const HomePage = () => {
                   <H1 style={{ textAlign: "center" }}>Need more infos.?</H1>
                   <Center>
                     <Hstack alignItems="center" space={4}>
-                      <Button>
+                      <Button to="https://ilyassbh.me">
                         Here is my <span>portfolio</span>
                       </Button>
                       <IconicButton title="Code review">
