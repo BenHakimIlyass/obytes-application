@@ -59,7 +59,7 @@ const HomePage = () => {
                         </H3>
                         <Center>
                           <P style={{ maxWidth: 480, lineHeight: "30px", textAlign: "center" }}>
-                            I understand the value of being a team member and for that I think I would be a good for
+                            I understand the value of being a team member and for that I think I would be a good fit for
                             this position (ReactJS developer). As well as I would love to express my interest in being
                             part of <span>Obytes</span> by taking an interview with you.
                           </P>
