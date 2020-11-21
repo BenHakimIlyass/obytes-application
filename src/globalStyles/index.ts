@@ -68,6 +68,13 @@ export const GlobalStyle = createGlobalStyle(css`
   a {
     color: #000 !important;
   }
+  button {
+    border: none;
+    background-color: #fff;
+  }
+  button:focus {
+    outline: none;
+  }
   * {
     scroll-behavior: smooth;
     ::selection {

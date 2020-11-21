@@ -1,8 +1,8 @@
 import React from "react";
-import { Vstack, Title, Button, WrapLetter } from "@components";
+import { Vstack, Title, Button } from "@components";
 import styled, { breakpoints, css } from "@xstyled/styled-components";
 import { motion } from "framer-motion";
-import { variants } from "./variants";
+
 const Hero = () => {
   const motionsProps = (delay) => ({
     initial: { opacity: 0, x: -10 },

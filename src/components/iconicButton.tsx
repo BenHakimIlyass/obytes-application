@@ -2,9 +2,9 @@ import styled from "@xstyled/styled-components";
 import { Hstack } from "@components";
 import { motion } from "framer-motion";
 
-const IconicButton = ({ title, bgcolor = "#000", color = "#fff", children }) => {
+const IconicButton = ({ title, bgcolor = "#000", color = "#fff", children, style = {} }) => {
   return (
-    <Thumbnail style={{ backgroundColor: bgcolor, color }} whileHover={{ y: -8 }}>
+    <Thumbnail style={{ backgroundColor: bgcolor, color, ...style }} whileHover={{ y: -8 }}>
       <Hstack alignItems="center" space={1}>
         <P>{title}</P>
         {children}
@@ -13,10 +13,8 @@ const IconicButton = ({ title, bgcolor = "#000", color = "#fff", children }) => 
   );
 };
 const Thumbnail = styled(motion.button)`
-  border-radius: 8px;
   height: 44px;
   border: none;
-  width: fit-content;
   padding: 8px 16px;
   cursor: pointer;
 `;
