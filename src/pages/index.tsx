@@ -75,7 +75,7 @@ const HomePage = () => {
                   <H1 style={{ textAlign: "center" }}>How I write code?</H1>
                   <Vstack space={2}>
                     <P style={{ lineHeight: "30px", textAlign: "center" }}>
-                      Feel free to use and edit my Github repositories.
+                      You can check my contributions, on my Github public repositories.
                     </P>
 
                     <Center>
