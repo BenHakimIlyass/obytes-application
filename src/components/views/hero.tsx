@@ -38,6 +38,7 @@ const H1 = styled(motion.h1)`
 const P = styled(motion.p)`
   font-size: 17px;
   font-weight: 400;
+  color: #2b2b2b;
 `;
 const HeroHolder = styled.div`
   ${breakpoints({

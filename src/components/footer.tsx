@@ -6,7 +6,10 @@ const Footer = () => {
     <Vstack space={6}>
       <Vstack space={2}>
         <P>Ilyass Ben Hakim - Frontend developer</P>
-        <P>ilyassbenhakim2@gmail.com</P>
+
+        <P href="mailto: ilyassbenhakim2@gmail.com" target="_blanc" as="a">
+          ilyassbenhakim2@gmail.com
+        </P>
       </Vstack>
       <Center>
         <a href="https://www.obytes.com/" target="_blanc">
@@ -37,6 +40,6 @@ const P = styled.p`
   font-size: 17px;
   text-align: center;
   font-weight: 400;
-  color: #333333;
+  color: #585858 !important;
 `;
 export default Footer;

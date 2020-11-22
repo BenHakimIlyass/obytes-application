@@ -2,10 +2,10 @@ import styled from "@xstyled/styled-components";
 import { Hstack } from "@components";
 import { motion } from "framer-motion";
 
-const IconicButton = ({ title, bgcolor = "#000", color = "#fff", children, style = {} }) => {
+const IconicButton = ({ title, bgcolor = "#000", color = "#fff", children, isCentered = false, style = {} }) => {
   return (
     <Thumbnail style={{ backgroundColor: bgcolor, color, ...style }} whileHover={{ y: -8 }}>
-      <Hstack alignItems="center" space={1}>
+      <Hstack alignItems="center" space={1} justifyContent={isCentered ? "center" : "flex-start"}>
         <P>{title}</P>
         {children}
       </Hstack>
