@@ -12,7 +12,7 @@ const IconicButton = ({
   ...props
 }) => {
   return (
-    <a {...props}>
+    <a {...props} target="_blanc">
       <Thumbnail style={{ backgroundColor: bgcolor, color, ...style }} whileHover={{ y: -6 }}>
         <Hstack alignItems="center" space={1} justifyContent={isCentered ? "center" : "flex-start"}>
           <P>{title}</P>

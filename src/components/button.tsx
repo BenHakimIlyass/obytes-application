@@ -6,7 +6,7 @@ import { useHover } from "@hooks";
 const Button = ({ to, children }) => {
   const [events, state] = useHover();
   return (
-    <a href={to} style={{ cursor: "pointer", textDecoration: "underline" }} {...events}>
+    <a href={to} target="_blanc" style={{ cursor: "pointer", textDecoration: "underline" }} {...events}>
       <Hstack alignItems="center" space={1}>
         <P>{children}</P>
         <motion.div animate={{ x: state ? 8 : 0 }}>
