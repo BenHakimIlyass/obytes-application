@@ -7,7 +7,7 @@ const Hero = () => {
   const motionsProps = (delay) => ({
     initial: { opacity: 0, x: -10 },
     animate: { opacity: 1, x: 0 },
-    transition: { delay, duration: 1 },
+    transition: { delay, duration: 0.6 },
   });
   return (
     <HeroHolder>
